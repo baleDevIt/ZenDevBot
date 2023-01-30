@@ -1,0 +1,15 @@
+CREATE TABLE FRASE (
+	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+	PHARSE TEXT
+);
+
+CREATE TABLE SKED (
+	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+	"TRIGGER" TEXT,
+	CHATID TEXT,
+	CONSTRAINT SKED_UN UNIQUE (CHATID)
+);
+
+
+
+INSERT INTO FRASE (PHARSE) VALUES ('Grazie per aver scaricato ZenDevBot, aggiungi in questa tabella le frasi che vuoi utilizzare in risposta ai messaggi.');
